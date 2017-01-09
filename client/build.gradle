@@ -1,0 +1,15 @@
+group 'arc.personal'
+version '1.0.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.apache.cxf:cxf-spring-boot-starter-jaxrs:${cxf_version}"
+    compile 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.6.7'
+    testCompile 'junit:junit:4.11'
+}
